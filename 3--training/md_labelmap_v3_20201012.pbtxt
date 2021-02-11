@@ -1,0 +1,36 @@
+item {
+  id: 1
+  name: 'buoy'
+}
+item {
+  id: 2
+  name: 'orange foam'
+}
+item {
+  id: 3
+  name: 'plastic'
+}
+item {
+  id: 4
+  name: 'net cloth'
+}
+item {
+  id: 5
+  name: 'line fragment'
+}
+item {
+  id: 6
+  name: 'metal'
+}
+item {
+  id: 7
+  name: 'tire'
+}
+item {
+  id: 8
+  name: 'processed wood'
+}
+item {
+  id: 9
+  name: 'vessel'
+}
