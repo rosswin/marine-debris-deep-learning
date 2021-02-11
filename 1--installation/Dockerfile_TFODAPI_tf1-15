@@ -1,0 +1,24 @@
+# Dockerfile creating a container for use with the TensorFlow Object Detection API 
+
+# This is a "frozen" Dockerfile used to setup and install the training environment for 
+# Ross's Masters Thesis work. This Dockerfile was forked from Microsoft AI for Earth Utils 
+# (from https://github.com/microsoft/ai4eutils/tree/master/TF_OD_API) and adapted to 
+# run the Ross's preferred Tensorflow version on Ross's hardware.
+
+# You should use the "main" Dockerfile located at the repo above as this file will not 
+# ever be updated. Many thanks to the Microsoft AI4E team for their support!
+
+FROM tensorflow/tensorflow:1.15.0-gpu-py3
+
+RUN useradd -ms /bin/bash 1000
+
+RUN mkdir /lib/tf
+COPY set_up_object_detection_api_tf1-15.sh /lib/tf/set_up_object_detection_api_tf1-15.sh
+
+RUN sh /lib/tf/set_up_object_detection_api_tf1-15.sh
+
+RUN chown -R 1000 /lib/tf/models
+
+ENV PYTHONPATH=$PYTHONPATH:/lib/tf/models/research:/lib/tf/models/research/slim
+
+CMD ["echo", "Image created"] 
