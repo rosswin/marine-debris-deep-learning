@@ -1,17 +1,22 @@
 # marine-debris-deep-learning
 The preprocessing, training, and evaluation code associated with Ross Winans's Masters Thesis entitled, "Automatic detection of Hawai'i's shoreline stranded mega-debris using deep learning"
 
-## Overview
+## Study Information
+~TBD~
 
+## Study Abstract
+~TBD~
+
+## Overview
+- **1--installation** contains Docker installation files. Native environment is Ubuntu 16.04+. Untested elsewhere.
+- **2--preprocessing** contains scripts to 1) retile GIS imagery and 2) reformat GIS annotations into training data for the Tensorflow Object Detection API (TFODAPI).
+- **3--training** contains the .config files that control each object detection model's hyperparameters, data augmentation options, etc. Also contains a .pbtxt format map of class name to class numbers as required by TFODAPI. TFODAPI's model_main.py script is the main training routine and not included in this repository (see sources below).
+- **4--evaluation** contains scripts to calculate per-class statistics and class confuision matricies. Additionally includes scripts for creating publication quality plots from our model outputs. High-level evaluation statistics such as COCO mAP are provided natively by TFODAPI through Tensorboard and do not require additional code. 
 
 ## Get the Data:
-1. Imagery
-- Imagery can be viewed as an 
-## Folder Descriptions
-1. Installation is done with Docker. Designed for Ubuntu 16.04+ workstations.
-2. Preprocessing is done to 1) retile GIS imagery and 2) reformat GIS annotations into training data for the Tensorflow Object Detection API (TFODAPI).
-3. Training is done with TFODAPI's model_main.py script. This repository contains the .config files that control each object detection model's hyperparameters, data augmentation options, etc. A .pbtxt format map of class name to class numbers is also included as required by TFODAPI.
-4. High-level evaluation statistics such as mAP are provided natively by TFODAPI through Tensorboard and do not require additional code. However, additional statistics such as per-class precision/recall and class confusion matricies required additional code. Further, additional code was required to display object detection model predictions as publication quality plots.
+1. [Source Imagery (GIS Format) available State of Hawai'i Office of Planning as an Esri REST Service.](http://geodata.hawaii.gov/arcgis/rest/services/SoH_Imagery/Coastal_2015/ImageServer)
+2. [Source Annotations available from Hawai'i State DLNR ~NEED TO FIND OFFICIAL LINK~]()
+3. [Reformatted DL Training Data (imagery+annotation) available at LILA BC ~FINAL LINK TBD~](http://lila.science/)
 
 ## Sources
 - [Dockerfiles adapted from Microsoft's AI for Earth Utils](https://github.com/microsoft/ai4eutils/tree/master/TF_OD_API)
