@@ -2,7 +2,7 @@
 The preprocessing, training, and evaluation code associated with Ross Winans's Masters Thesis entitled, "Automatic detection of Hawai'i's shoreline stranded mega-debris using deep learning"
 
 ## Study Information
-~TBD~
+Final Link TBD
 
 ## Study Abstract
 ~TBD~
@@ -15,10 +15,10 @@ The preprocessing, training, and evaluation code associated with Ross Winans's M
 
 ## Get the Data:
 1. [Source Imagery (GIS Format) available State of Hawai'i Office of Planning as an Esri REST Service.](http://geodata.hawaii.gov/arcgis/rest/services/SoH_Imagery/Coastal_2015/ImageServer)
-2. [Source Annotations available from Hawai'i State DLNR ~NEED TO FIND OFFICIAL LINK~]()
-3. [Reformatted DL Training Data (imagery+annotation) available at LILA BC ~FINAL LINK TBD~](http://lila.science/)
+2. [Source Annotations available from Hawai'i State Department of Land and Natural Resources (DLNR), Department of Aquatic Resources (DAR)](DLNR.aquatics@hawaii.gov)
+3. [Reformatted DL Training Data (imagery+annotation) will be available at LILA BC soon](http://lila.science/)
 
-## Sources
+## References
 - [Dockerfiles adapted from Microsoft's AI for Earth Utils](https://github.com/microsoft/ai4eutils/tree/master/TF_OD_API)
 - [generate_tfrecord.py adapted from Dat Tran's Raccoon Detector](https://github.com/datitran/raccoon_dataset/blob/master/generate_tfrecord.py)
 - [Training .config files adapted from TFODAPI Sample Configs](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs)
