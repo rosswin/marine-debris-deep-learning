@@ -5,7 +5,7 @@ The preprocessing, training, and evaluation code associated with Ross Winans's M
 Final Link TBD
 
 ## Study Abstract
-~TBD~
+Marine debris is a global crisis that negatively affects human health and safety, wildlife, and coastal economies. Geospatial technology has been deployed to map, measure, and model the sources, pathways, and eventual sinks of marine debris, however data are still scarce due to the high cost of conducting fieldwork or manually labeling debris in remote sensing images. Recent advances in artificial intelligence and deep learning have brought rapid automation of tedious tasks to new domains, such as marine debris identification in aerial imagery. This study evaluates deep learning-based object detection to automatically detect, localize, and classify stranded marine debris along 1,200 km of the diverse Hawaiian coastline. Two leading object detection models were tested: Faster RCNN with Inception-ResNet-v2 (FR-IR) and SSD with MobileNetV2 (SS-MN). These two models offer a tradeoff between detection speed and identification precision, with one model performing 5x’s as quickly. The results show that the model with higher computational cost, FR-IR, can detect and classify mega-debris (marine debris larger than 10cm) with a mean average precision (mAP) of 57.4%. The speedier model, SS-MN, detects and classifies mega-debris with an mAP of 36.1%. When viewed in detail the results of our object detection and deep learning classifiers show clear best practices for the advancement of deep learning for real-world management of shoreline stranded marine debris at the large, regional scale.
 
 ## Overview
 - **1--installation** contains Docker installation files. Native environment is Ubuntu 16.04+. Untested elsewhere.
