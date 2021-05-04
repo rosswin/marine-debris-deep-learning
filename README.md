@@ -1,5 +1,5 @@
 # marine-debris-deep-learning
-The preprocessing, training, and evaluation code associated with Ross Winans's Masters Thesis entitled, "Automatic detection of Hawai'i's shoreline stranded mega-debris using deep learning"
+The preprocessing, training, and evaluation code associated with Ross Winans's Masters Thesis entitled, "Automatic detection of Hawai'i's shoreline stranded mega-debris using deep learning-based object detection"
 
 ## Study Information
 Final Link TBD
